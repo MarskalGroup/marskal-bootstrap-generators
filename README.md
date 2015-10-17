@@ -37,7 +37,7 @@ Once you've done that, any time you generate a controller or scaffold, you'll ge
 To print the options and usage run the command `rails generate marskal:bootstrap:install --help`
 
     Usage:
-      rails generate bootstrap:install [options]
+      rails generate marskal:bootstrap:install [options]
 
     Options:
         N/A
@@ -59,7 +59,7 @@ Make sure you have these gems placed in your GemFile:
 
 And then run:
 
-    rails generate bootstrap:install 
+    rails generate marskal:bootstrap:install 
 
 Now you can customize the look and feel of Bootstrap.
 
