@@ -1,7 +1,7 @@
 module Marskal
   module Bootstrap
     module Generators
-      VERSION = '0.1.1'
+      VERSION = '3.3.5'
     end
   end
 end

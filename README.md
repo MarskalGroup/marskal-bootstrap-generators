@@ -26,19 +26,15 @@ Run bundle install:
 
 Get started:
 
-    rails generate bootstrap:install
+    rails generate marskal:bootstrap:install
 
 To overwrite files that already exist, pass the `--force` (`-f`) option.
 
 Once you've done that, any time you generate a controller or scaffold, you'll get [Bootstrap](http://twitter.github.com/bootstrap/) templates.
 
-### Give it a try
-
-    rails generate scaffold post title body:text published:boolean
-
 ## Usage
 
-To print the options and usage run the command `rails generate bootstrap:install --help`
+To print the options and usage run the command `rails generate marskal:bootstrap:install --help`
 
     Usage:
       rails generate bootstrap:install [options]
@@ -54,21 +50,7 @@ To print the options and usage run the command `rails generate bootstrap:install
 
     Copy MarskalBootstrapGenerators default files
 
-### Options
-
-#### Template engines
-
-Supported template engines:
-
-* ERB
-
-#### Stylesheet engines
-
-Supported stylesheet engines:
-
-* SCSS
-
-##### SCSS
+## Gemfile
 
 Make sure you have these gems placed in your GemFile:
 
@@ -86,7 +68,14 @@ Now you can customize the look and feel of Bootstrap.
     custom tweaks to the styles will be place in:
        apps/assets/stylesheets/marskal-bootstrap-generators
     
-    Be sure to include this file in your application.scss files
+    Be sure to include this file in your application.scss files along with bootstrap .scss files
+    
+### Sample application.scss
+
+    // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+    @import "bootstrap-sprockets";
+    @import "bootstrap";
+    @import "marskal-bootstrap-generators"; //marskal-bootstap-generators gem
 
 ### Javascript
 
@@ -108,6 +97,10 @@ Or quickly add only the necessary javascript (Transitions: required for any anim
     //= require bootstrap/scrollspy
     //= require bootstrap/dropdown
     //= require bootstrap/carousel
+
+## Give it a try
+
+    rails generate scaffold post title body:text published:boolean
 
 
 ## Customizing Templates
