@@ -1,5 +1,10 @@
 # Change log `(Revision History)`
 
+## v3.3.5.2 - `2015-10-17 by MAU`
+* Added --skip-navigation and --skip-devise options
+* Cleaned up more README.md items
+* Removed Gemfile again. I think it is only needed for testing
+    
 ## v3.3.5.1 - `2015-10-17 by MAU`
 * Cleaned up more README.md items
 * put back in Gemfile

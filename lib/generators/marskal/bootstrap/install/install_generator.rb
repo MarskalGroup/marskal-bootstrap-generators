@@ -7,8 +7,8 @@ module Marskal
         desc 'Copy BootstrapGenerators default files'
         source_root ::File.expand_path('../templates', __FILE__)
 
-        # class_option :template_engine
-        # class_option :stylesheet_engine
+        class_option :skip_navigation, type: :boolean, default: false, desc: "Skip Bootstrap Navigation Menu (navbar)"
+        class_option :skip_devise,  type: :boolean, default: false, desc: "Skip Logout Devise Link"
 
         def copy_lib
           directory "lib/templates/erb"
@@ -19,6 +19,24 @@ module Marskal
         end
 
         def create_layout
+          if options[:skip_navigation]
+
+            inject_into_file "app/views/layouts/application.html.erb", "<div class='container'>\n    ", :before => "<%= yield %>"
+            inject_into_file "app/views/layouts/application.html.erb", "\n  </div>\n", :after => "<%= yield %>"
+
+            return  #no navbar to generate, so just leave after wrapping in a container
+
+          end
+
+
+logout=<<-LOGOUT
+          <% if user_signed_in? %>
+              <li>
+                <%= link_to 'Log Out',  destroy_user_session_path, method: :delete %>
+              </li>
+          <% end %>
+LOGOUT
+
 nav_menu=<<-NAVMENU
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -36,11 +54,7 @@ nav_menu=<<-NAVMENU
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <% if user_signed_in? %>
-              <li>
-                <%= link_to 'Log Out',  destroy_user_session_path, method: :delete %>
-              </li>
-          <% end %>
+          #{logout unless options[:skip_devise]}
         </ul>
       </div>
     </div>
@@ -59,7 +73,9 @@ NAVMENU
 
         def create_stylesheets
           copy_file "assets/stylesheets/starter.scss", "app/assets/stylesheets/marskal-bootstrap-generators.scss"
-
+          if options[:skip_navigation]
+            gsub_file("app/assets/stylesheets/marskal-bootstrap-generators.scss", "padding-top: $navbar-height + 10px;", "")
+          end
         end
 
       end

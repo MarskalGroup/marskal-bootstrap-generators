@@ -2,7 +2,7 @@
 
 marskal-bootstrap-generators provides [Twitter Bootstrap](http://getbootstrap.com/) generators for Rails 4. Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites.
 
-    Note: This version will also stub in a simple bootstrap navigation system, with a log out button for the devise gem. Feel free to customize or remove this navigation bar as needed.
+    Note: By default, this version will also stub in a simple bootstrap navigation system, with a log out button for the devise gem. See Usage to suppress this feature.
 
 ## Current Twitter Bootstrap version
 
@@ -40,8 +40,9 @@ To print the options and usage run the command `rails generate marskal:bootstrap
       rails generate marskal:bootstrap:install [options]
 
     Options:
-        N/A
-
+      [--skip-navigation], [--no-skip-navigation]  # Skip Bootstrap Navigation Menu (navbar)
+      [--skip-devise], [--no-skip-devise]          # Skip Logout Devise Link
+  
     Runtime options:
       -f, [--force]                    # Overwrite files that already exist
       -p, [--pretend], [--no-pretend]  # Run but do not make any changes
@@ -81,7 +82,10 @@ Now you can customize the look and feel of Bootstrap.
 
 Select all jQuery plugins (`app/assets/javascripts/bootstrap.js`)
 
-    //= require bootstrap
+Require Bootstrap Javascripts in app/assets/javascripts/application.js:
+
+    //= require jquery
+    //= require bootstrap-sprockets
 
 Or quickly add only the necessary javascript (Transitions: required for any animation; Popovers: requires Tooltips)
 
@@ -105,7 +109,7 @@ Or quickly add only the necessary javascript (Transitions: required for any anim
 
 ## Customizing Templates
 
-Since Bootstrap Generators installs its templates under lib/templates, you can go and customize them.
+Since Marskal Bootstrap Generators installs its templates under lib/templates, you can go and customize them.
 
 ## Credits
 
