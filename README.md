@@ -70,9 +70,10 @@ Supported stylesheet engines:
 
 ##### SCSS
 
-Make sure you have `sass-rails` dependency on your Gemfile:
+Make sure you have these gems placed in your GemFile:
 
-    gem 'sass-rails'
+    gem "bootstrap-sass", "~> 3.3.5"
+    gem 'sass-rails', '~> 5.0'
 
 And then run:
 

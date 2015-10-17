@@ -25,4 +25,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "railties", ">= 4.0.0"
   spec.add_dependency "bootstrap-sass", "~> 3.3.5"
+  spec.add_dependency 'sass-rails', '~> 5.0'
 end
