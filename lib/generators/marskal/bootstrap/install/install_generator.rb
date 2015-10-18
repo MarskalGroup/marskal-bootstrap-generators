@@ -54,7 +54,7 @@ nav_menu=<<-NAVMENU
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          #{logout unless options[:skip_devise]}
+#{logout unless options[:skip_devise]}
         </ul>
       </div>
     </div>
