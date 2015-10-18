@@ -1,5 +1,8 @@
 # Change log `(Revision History)`
 
+## v3.3.5.3 - `2015-10-17 by MAU`
+* Still trying to figuire out if I need gem file or not
+
 ## v3.3.5.2 - `2015-10-17 by MAU`
 * Added --skip-navigation and --skip-devise options
 * Cleaned up more README.md items
