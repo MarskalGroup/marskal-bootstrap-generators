@@ -1,0 +1,16 @@
+<%
+   cancel_link = root_path if cancel_link.blank?
+   cancel_text = 'Cancel' if cancel_text.blank?
+   save_text =  nil  if save_text.blank?
+
+%>
+<div class="form-buttons">
+
+  <div class="form-group">
+    <%= link_to cancel_text, cancel_link, class: 'btn btn-cancel' %>
+
+    <%= f.submit save_text, class: "btn btn-save" %>
+
+  </div>
+
+</div>

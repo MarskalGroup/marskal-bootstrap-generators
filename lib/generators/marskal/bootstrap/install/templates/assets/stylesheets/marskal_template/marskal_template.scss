@@ -1,0 +1,94 @@
+
+//basic button classes
+body.marskal-template {
+
+  .btn-save {
+    color:        $btn-save-color;
+    background:   linear-gradient(lighten($btn-save-bg,10%), darken($btn-save-bg,10%));
+    border-color: $btn-save-border;
+  }
+
+  .btn-delete {
+    color:        $btn-delete-color;
+    background:   linear-gradient(lighten($btn-delete-bg,10%), darken($btn-delete-bg,10%));
+    border-color: $btn-delete-border;
+  }
+
+  .btn-show {
+    color:        $btn-show-color;
+    background:   linear-gradient(lighten($btn-show-bg,10%), darken($btn-show-bg,10%));
+    border-color: $btn-show-border;
+  }
+
+  .btn-cancel {
+    color:        $btn-cancel-color;
+    background:   linear-gradient(lighten($btn-cancel-bg,10%), darken($btn-cancel-bg,10%));
+    border-color: $btn-cancel-border;
+  }
+
+  .btn-back {
+    color:        $btn-back-color;
+    background:   linear-gradient(lighten($btn-back-bg,10%), darken($btn-back-bg,10%));
+    border-color: $btn-back-border;
+  }
+
+  .btn-info { background:   linear-gradient(lighten($btn-info-bg,10%), darken($btn-info-bg,10%));  }
+  .btn-default { background:   linear-gradient(lighten($btn-default-bg,10%), darken($btn-default-bg,10%));  }
+  .btn-primary { background:   linear-gradient(lighten($btn-primary-bg,10%), darken($btn-primary-bg,10%));  }
+  .btn-success { background:   linear-gradient(lighten($btn-success-bg,10%), darken($btn-success-bg,10%));  }
+  .btn-warning { background:   linear-gradient(lighten($btn-warning-bg,10%), darken($btn-warning-bg,10%));  }
+  .btn-danger { background:   linear-gradient(lighten($btn-danger-bg,10%), darken($btn-danger-bg,10%));  }
+
+  .navbar-inverse { background: linear-gradient(lighten($navbar-inverse-bg,20%), darken($navbar-inverse-bg,30%));  }
+  .dropdown-menu {
+    color: #fff;
+    background:  lighten($navbar-inverse-bg,70%) ;
+  }
+
+  div.form-buttons {
+    @extend .col-xs-12;
+    .btn {
+      margin-right: 10px;
+    }
+  }
+
+
+
+}
+
+body.marskal-template {
+
+  .navbar-nav > .active > a {
+    background: $marskal-navbar-active-bg;
+  }
+
+  .page-header {
+    &.marskal-generator {
+      margin: 4px 0 2px;  //override boostrap defaults
+      h2:first-of-type {
+        color: $marskal-generator-title-fg;
+      }
+
+      a.btn {
+        float: right;
+      }
+
+      a.btn + a.btn {
+        margin-right: 8px;
+      }
+    }
+  }
+
+
+  //custom
+  td.td-action-buttons {
+    text-align: center;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    &.td-action-buttons-xs-one { max-width: 20px; }
+    &.td-action-buttons-xs-two { max-width: 40px; }
+  }
+
+}
+
+

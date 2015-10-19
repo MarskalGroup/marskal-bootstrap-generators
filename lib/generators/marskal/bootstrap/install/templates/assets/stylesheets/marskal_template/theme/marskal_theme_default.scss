@@ -1,0 +1,33 @@
+$marskal-generator-title-fg: #6f0d05;
+
+$marskal-navbar-active-bg: #506A9C;
+
+//standard buttons: default them will just use bootstrap colors
+$btn-save-color:  #fff;
+$btn-save-bg:    darken(#428bca, 6.5%);
+$btn-save-border: darken($btn-save-bg, 5%);
+
+$btn-delete-color:  #fff;
+$btn-delete-bg:    #d9534f;
+$btn-delete-border: darken($btn-delete-bg, 5%);
+
+$btn-show-color:  #fff;
+$btn-show-bg:     #5bc0de;
+$btn-show-border: darken($btn-show-bg, 5%);
+
+$btn-cancel-color:  #fff;
+$btn-cancel-bg:     #434343;
+$btn-cancel-border: darken($btn-cancel-bg, 5%);
+
+$btn-back-color:  #fff;
+$btn-back-bg:     #434343;
+$btn-back-border: darken($btn-back-bg, 5%);
+
+
+body.marskal-template-theme-default {
+
+
+
+}
+
+

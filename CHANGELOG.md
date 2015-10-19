@@ -1,5 +1,8 @@
 ## Change log `(Revision History)`
 
+###### v3.3.6.0 - `2015-10-17 by MAU`
+* Added marksal-template scss files and did a lot of scss cleanup
+
 ###### v3.3.5.6c - `2015-10-17 by MAU`
 * Changed Format of CHANGELOG.md
 
