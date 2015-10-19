@@ -2,8 +2,6 @@
 
 marskal-bootstrap-generators provides [Twitter Bootstrap](http://getbootstrap.com/) generators for Rails 4. Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites.
 
-    Note: By default, this version will also stub in a simple bootstrap navigation system, with a log out button for the devise gem. See Usage to suppress this feature.
-
 ## Current Twitter Bootstrap version
 
 The current supported version of Twitter Bootstrap is 3.3.5.
@@ -40,8 +38,7 @@ To print the options and usage run the command `rails generate marskal:bootstrap
       rails generate marskal:bootstrap:install [options]
 
     Options:
-      [--skip-navigation], [--no-skip-navigation]  # Skip Bootstrap Navigation Menu (navbar)
-      [--skip-devise], [--no-skip-devise]          # Skip Logout Devise Link
+        N/A
   
     Runtime options:
       -f, [--force]                    # Overwrite files that already exist

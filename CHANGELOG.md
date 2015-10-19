@@ -1,5 +1,8 @@
 # Change log `(Revision History)`
 
+## v3.3.5.5 - `2015-10-17 by MAU`
+* Removed Navigation features and corresponding option
+
 ## v3.3.5.4 - `2015-10-17 by MAU`
 * Fixed alignment in application.html.erb for logout link
 
