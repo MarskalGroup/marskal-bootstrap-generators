@@ -1,6 +1,6 @@
 ## Change log `(Revision History)`
 
-###### v3.3.5.6 - `2015-10-17 by MAU`
+###### v3.3.5.6c - `2015-10-17 by MAU`
 * Changed Format of CHANGELOG.md
 
 ###### v3.3.5.5 - `2015-10-17 by MAU`
