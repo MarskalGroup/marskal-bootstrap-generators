@@ -1,5 +1,8 @@
 ## Change log `(Revision History)`
 
+###### v3.3.6.1 - `2015-10-29 by MAU`
+* Added a tweak to prevent wrapping of action buttons on tables
+
 ###### v3.3.6.0 - `2015-10-17 by MAU`
 * Added marksal-template scss files and did a lot of scss cleanup
 
