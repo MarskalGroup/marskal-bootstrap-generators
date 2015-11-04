@@ -86,9 +86,28 @@ body.marskal-template {
 	white-space: nowrap;
     padding-left: 5px !important;
     padding-right: 5px !important;
-    &.td-action-buttons-xs-one { max-width: 20px; }
-    &.td-action-buttons-xs-two { max-width: 40px; }
+    //&.td-action-buttons-xs-one { max-width: 20px; }
+    //&.td-action-buttons-xs-two { max-width: 40px; }
   }
+
+  nav.navbar-main-top {
+    @extend .navbar-inverse;
+    a.nav-icon {
+      margin: 4px 3px 0 3px;
+      padding: 0px;
+      span.glyphicon {
+        border-radius: 2px;
+        background-color: $navbar-main-btn-default-bg;
+        color: $navbar-main-btn-default-color;
+        &:hover { color: $navbar-main-btn-default-hover; }
+        font-size: 17px;
+        width: 30px;
+        height: 27px;
+        padding: 6px 3px 3px 3px;
+        text-align: center;
+      }
+    }
+  } //end nav-main-top
 
 }
 

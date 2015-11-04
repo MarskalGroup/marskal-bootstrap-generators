@@ -1,5 +1,8 @@
 ## Change log `(Revision History)`
 
+###### v3.3.6.2 - `2015-11-04 by MAU`
+* Added icons and css for the navbar
+
 ###### v3.3.6.1 - `2015-10-29 by MAU`
 * Added a tweak to prevent wrapping of action buttons on tables
 
